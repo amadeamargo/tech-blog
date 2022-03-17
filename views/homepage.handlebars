@@ -1,0 +1,16 @@
+
+{{#if posts.length}}
+<div>
+      {{#each posts as |post|}}
+      {{> post-info post }}
+      {{/each}}
+</div>
+{{/if}}
+
+<div class="new-post-btn form-group">
+      <a class="btn btn-primary" href="dashboard/create">Add New Post</a>
+</div>
+
+{{#if logged_in}}
+      <script src="/js/new-post.js"></script>
+{{/if}}
