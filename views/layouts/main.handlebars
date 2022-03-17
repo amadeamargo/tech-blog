@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog</title>
+</head>
+<body>
+    <div>
+        <nav>
+            {{#if logged_in}}
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/dashboard/create">Make a Post</a>
+            {{else}}
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+            <a href="/signup">Signup</a>
+        </nav>
+
+        <header>
+            <a href="/" Tech Blog>
+            <h2>Tech Blog
+            </h2>
+        </header>
+        <main>
+            {{{body}}}
+        </main>
+    </div>
+    
+</body>
+</html>
